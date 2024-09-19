@@ -1,0 +1,15 @@
+path       = /home/zhangjiahao/test/ 
+log_path   = $(path)/log_test/
+
+Universe   = vanilla
+Executable = $(path)test.
+Arguments  = 1000
+
+Log        = $(log_path)test01.log
+Output     = $(log_path)test01.out
+Error      = $(log_path)test01.error
+
+# INPAC has shared filesystem, do NOT transfer file
+should_transfer_files = NO
+Queue
+
